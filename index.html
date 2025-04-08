@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Sharing App with Node.js and Socket.IO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Screen Sharing App</h1>
+    <button id="startBtn">Start Screen Sharing</button>
+    <div style="display: flex;">
+      <div id="screenContainer">
+        <video id="screenVideo" width="600" height="400" autoplay></video>
+      </div>
+      <div id="shareContainer">
+        <video id="shareVideo" width="600" height="400" autoplay controls></video>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
